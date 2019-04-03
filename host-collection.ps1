@@ -89,7 +89,7 @@ foreach ($ip in $targ_ips){
         # Get Services
         Write-Progress -id (($targ_ips.indexof($ip))+1) -parentid 0 -Activity "Collecting services..." -status "Progress:" -PercentComplete 66.64
         $host_services = Invoke-Command -Session $ipsession -ScriptBlock {Get-Service}
-        $host_services | out-file ($ip.tostring() + "_" + $timestamp + "_servies.txt")
+        $host_services | out-file ($ip.tostring() + "_" + $timestamp + "_services.txt")
 
         # Get IP Configuration
         Write-Progress -id (($targ_ips.indexof($ip))+1) -parentid 0 -Activity "Collecting IP configuration..." -status "Progress:" -PercentComplete 75
