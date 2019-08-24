@@ -1,4 +1,2 @@
-﻿c:\windows\system32\calc.exe
-c:\windows\system32\cmd.exe
-c:\windows\system32\notepad.exe
-c:\windows\system32\csrss.exe
+﻿c:\windows\system32\*.exe
+c:\windows\*.exe
